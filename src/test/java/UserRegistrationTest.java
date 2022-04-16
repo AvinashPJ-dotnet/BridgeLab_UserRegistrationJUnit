@@ -73,7 +73,7 @@ public class UserRegistrationTest {
     @Test
     void givenFirstName_WhenProperPassword_ShouldReturnTrue() {
         UserRegistration userRegistration = new UserRegistration();
-        boolean result = userRegistration.addPassword("Aa3ssdasd4");
+        boolean result = userRegistration.addPassword("Aa3ssdasd4$#");
         Assertions.assertTrue(result);
     }
 
@@ -81,7 +81,7 @@ public class UserRegistrationTest {
     @Test
     void givenFirstName_WhenNotProperPassword_ShouldReturnFalse() {
         UserRegistration userRegistration = new UserRegistration();
-        boolean result = userRegistration.addPassword("aasasAasd");
+        boolean result = userRegistration.addPassword("aasasAasd$");
         Assertions.assertFalse(result);
     }
 }
