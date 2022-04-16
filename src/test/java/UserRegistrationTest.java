@@ -66,4 +66,21 @@ public class UserRegistrationTest {
         Assertions.assertFalse(result);
     }
 
+
+    //UC5 password only accept 8 character true
+    @Test
+    void givenFirstName_WhenProperPassword_ShouldReturnTrue() {
+        UserRegistration userRegistration = new UserRegistration();
+        boolean result = userRegistration.addPassword("aassdasd");
+        Assertions.assertTrue(result);
+    }
+
+    //UC5 password false
+    @Test
+    void givenFirstName_WhenNotProperPassword_ShouldReturnFalse() {
+        UserRegistration userRegistration = new UserRegistration();
+        boolean result = userRegistration.addPassword("aasas");
+        Assertions.assertFalse(result);
+    }
+
 }
