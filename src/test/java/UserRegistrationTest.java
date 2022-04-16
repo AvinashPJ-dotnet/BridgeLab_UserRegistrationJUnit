@@ -18,4 +18,21 @@ public class UserRegistrationTest {
         Assertions.assertFalse(result);
     }
 
+    //UC2 last name true
+    @Test
+    void givenFirstName_WhenProperLastName_ShouldReturnTrue() {
+        UserRegistration userRegistration = new UserRegistration();
+        boolean result = userRegistration.addLastName("Pujari");
+        Assertions.assertTrue(result);
+    }
+
+    //UC2 last name false
+    @Test
+    void givenFirstName_WhenNotProperLastName_ShouldReturnFalse() {
+        UserRegistration userRegistration = new UserRegistration();
+        boolean result = userRegistration.addFirstName("pujari");
+        Assertions.assertFalse(result);
+    }
+
+
 }

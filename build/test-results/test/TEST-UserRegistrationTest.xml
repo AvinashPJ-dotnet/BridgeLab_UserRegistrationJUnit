@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="UserRegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-04-16T06:34:49" hostname="AVINASHPJ-PC" time="0.042">
+<testsuite name="UserRegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-04-16T06:41:10" hostname="AVINASHPJ-PC" time="0.038">
   <properties/>
-  <testcase name="givenFirstName_WhenNotProperFirstName_ShouldReturnFalse()" classname="UserRegistrationTest" time="0.042"/>
+  <testcase name="givenFirstName_WhenNotProperLastName_ShouldReturnFalse()" classname="UserRegistrationTest" time="0.038"/>
   <system-out><![CDATA[Please check First Name
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
