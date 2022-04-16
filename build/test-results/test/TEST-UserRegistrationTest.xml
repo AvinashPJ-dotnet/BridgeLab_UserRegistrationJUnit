@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="UserRegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-04-16T06:48:59" hostname="AVINASHPJ-PC" time="0.04">
+<testsuite name="UserRegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-04-16T06:56:50" hostname="AVINASHPJ-PC" time="0.044">
   <properties/>
-  <testcase name="givenFirstName_WhenNotProperEmailId_ShouldReturnFalse()" classname="UserRegistrationTest" time="0.04"/>
-  <system-out><![CDATA[Please check email id
+  <testcase name="givenFirstName_WhenNotProperPhoneNumber_ShouldReturnFalse()" classname="UserRegistrationTest" time="0.044"/>
+  <system-out><![CDATA[Please check Phone Number
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

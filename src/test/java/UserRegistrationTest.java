@@ -50,5 +50,20 @@ public class UserRegistrationTest {
         Assertions.assertFalse(result);
     }
 
+    //UC4 PhoneNumber true
+    @Test
+    void givenFirstName_WhenProperPhoneNumber_ShouldReturnTrue() {
+        UserRegistration userRegistration = new UserRegistration();
+        boolean result = userRegistration.addPhoneNumber("91 7204024334");
+        Assertions.assertTrue(result);
+    }
+
+    //UC4 PhoneNumber false
+    @Test
+    void givenFirstName_WhenNotProperPhoneNumber_ShouldReturnFalse() {
+        UserRegistration userRegistration = new UserRegistration();
+        boolean result = userRegistration.addPhoneNumber("917204024334");
+        Assertions.assertFalse(result);
+    }
 
 }
