@@ -69,11 +69,11 @@ public class UserRegistrationTest {
 
     //*UC5 password only accept 8 character true
     //*password should have at least one Upper case letter
-    //*password shoudnt have digits
+    //*password shoudat least one  have digits
     @Test
     void givenFirstName_WhenProperPassword_ShouldReturnTrue() {
         UserRegistration userRegistration = new UserRegistration();
-        boolean result = userRegistration.addPassword("Aassdasd");
+        boolean result = userRegistration.addPassword("Aa3ssdasd4");
         Assertions.assertTrue(result);
     }
 
@@ -81,7 +81,7 @@ public class UserRegistrationTest {
     @Test
     void givenFirstName_WhenNotProperPassword_ShouldReturnFalse() {
         UserRegistration userRegistration = new UserRegistration();
-        boolean result = userRegistration.addPassword("aasasAasd12");
+        boolean result = userRegistration.addPassword("aasasAasd");
         Assertions.assertFalse(result);
     }
 }

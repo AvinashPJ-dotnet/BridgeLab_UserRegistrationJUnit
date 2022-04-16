@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="UserRegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-04-16T09:55:27" hostname="AVINASHPJ-PC" time="0.039">
+<testsuite name="UserRegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-04-16T10:24:58" hostname="AVINASHPJ-PC" time="0.042">
   <properties/>
-  <testcase name="givenFirstName_WhenProperPassword_ShouldReturnTrue()" classname="UserRegistrationTest" time="0.039"/>
+  <testcase name="givenFirstName_WhenProperPassword_ShouldReturnTrue()" classname="UserRegistrationTest" time="0.042"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
