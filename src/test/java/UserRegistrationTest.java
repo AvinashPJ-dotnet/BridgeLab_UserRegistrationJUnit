@@ -34,5 +34,21 @@ public class UserRegistrationTest {
         Assertions.assertFalse(result);
     }
 
+    //UC3 EmailId true
+    @Test
+    void givenFirstName_WhenProperEmailId_ShouldReturnTrue() {
+        UserRegistration userRegistration = new UserRegistration();
+        boolean result = userRegistration.addEmail("avi.100@gmail.com");
+        Assertions.assertTrue(result);
+    }
+
+    //UC3 Email id false
+    @Test
+    void givenFirstName_WhenNotProperEmailId_ShouldReturnFalse() {
+        UserRegistration userRegistration = new UserRegistration();
+        boolean result = userRegistration.addEmail("avi.100@g.c");
+        Assertions.assertFalse(result);
+    }
+
 
 }
